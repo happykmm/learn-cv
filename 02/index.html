@@ -40,6 +40,7 @@
             // schedule the next one.
             let delay = 1000/FPS - (Date.now() - begin);
             setTimeout(processVideo, delay);
+            console.log('delay=', delay);
         } catch (err) {
             console.log(err);
         }
