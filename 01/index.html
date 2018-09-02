@@ -17,8 +17,10 @@
     <div class="caption">canvasOutput</div>
   </div>
 </div>
-<script async src="https://docs.opencv.org/3.4.0/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+<script src="https://docs.opencv.org/3.4.0/opencv.js" type="text/javascript"></script>
 <script>
+  document.getElementById('status').innerHTML = 'OpenCV.js is ready.';
+
   let imgElement = document.getElementById('imageSrc');
   let inputElement = document.getElementById('fileInput');
 
@@ -40,10 +42,6 @@
     src.delete();
     dst.delete();
   };
-
-  function onOpenCvReady() {
-    document.getElementById('status').innerHTML = 'OpenCV.js is ready.';
-  }
 </script>
 </body>
 </html>
